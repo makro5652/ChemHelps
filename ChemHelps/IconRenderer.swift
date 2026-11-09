@@ -1,6 +1,6 @@
 import AppKit
 
-/// `Formelschreiber --icon <datei.png>` zeichnet das App-Symbol in 1024 × 1024 Pixeln.
+/// `ChemHelps --icon <datei.png>` zeichnet das App-Symbol in 1024 × 1024 Pixeln.
 enum IconRenderer {
     @MainActor
     static func runIfRequested() -> Bool {

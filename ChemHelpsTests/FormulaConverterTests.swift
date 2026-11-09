@@ -1,5 +1,5 @@
 import XCTest
-@testable import Formelschreiber
+@testable import ChemHelps
 
 final class FormulaConverterTests: XCTestCase {
     private func check(_ input: String, _ expected: String, file: StaticString = #filePath, line: UInt = #line) {

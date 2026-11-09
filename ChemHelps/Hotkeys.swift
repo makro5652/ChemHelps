@@ -5,11 +5,15 @@ import Carbon.HIToolbox
 enum HotkeyAction: UInt32, CaseIterable {
     case openWriter = 1
     case convertSelection = 2
+    case periodicTable = 3
+    case molecule = 4
 
     var keyCode: UInt32 {
         switch self {
         case .openWriter: UInt32(kVK_ANSI_F)
         case .convertSelection: UInt32(kVK_ANSI_K)
+        case .periodicTable: UInt32(kVK_ANSI_E)
+        case .molecule: UInt32(kVK_ANSI_M)
         }
     }
 
@@ -19,6 +23,8 @@ enum HotkeyAction: UInt32, CaseIterable {
         switch self {
         case .openWriter: "⌃⌥⌘F"
         case .convertSelection: "⌃⌥⌘K"
+        case .periodicTable: "⌃⌥⌘E"
+        case .molecule: "⌃⌥⌘M"
         }
     }
 }
@@ -26,7 +32,7 @@ enum HotkeyAction: UInt32, CaseIterable {
 /// Registriert die Kurzbefehle über die Carbon-Schnittstelle; das braucht keine Freigabe.
 @MainActor
 final class GlobalHotkeys {
-    private static let signature = OSType(0x46_4F_52_4D) // "FORM"
+    private static let signature = OSType(0x43_48_45_4D) // "CHEM"
 
     private let onPress: (HotkeyAction) -> Void
     private var references: [EventHotKeyRef] = []

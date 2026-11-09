@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		A10000000000000000000001 /* Formelschreiber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Formelschreiber.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B10000000000000000000001 /* FormelschreiberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormelschreiberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10000000000000000000001 /* ChemHelps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChemHelps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B10000000000000000000001 /* ChemHelpsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChemHelpsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A10000000000000000000002 /* Formelschreiber */ = {
+		A10000000000000000000002 /* ChemHelps */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Formelschreiber;
+			path = ChemHelps;
 			sourceTree = "<group>";
 		};
-		B10000000000000000000002 /* FormelschreiberTests */ = {
+		B10000000000000000000002 /* ChemHelpsTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FormelschreiberTests;
+			path = ChemHelpsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,8 +45,8 @@
 		A10000000000000000000004 = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000002 /* Formelschreiber */,
-				B10000000000000000000002 /* FormelschreiberTests */,
+				A10000000000000000000002 /* ChemHelps */,
+				B10000000000000000000002 /* ChemHelpsTests */,
 				A10000000000000000000005 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +54,8 @@
 		A10000000000000000000005 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A10000000000000000000001 /* Formelschreiber.app */,
-				B10000000000000000000001 /* FormelschreiberTests.xctest */,
+				A10000000000000000000001 /* ChemHelps.app */,
+				B10000000000000000000001 /* ChemHelpsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,9 +63,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A10000000000000000000006 /* Formelschreiber */ = {
+		A10000000000000000000006 /* ChemHelps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A10000000000000000000010 /* Build configuration list for PBXNativeTarget "Formelschreiber" */;
+			buildConfigurationList = A10000000000000000000010 /* Build configuration list for PBXNativeTarget "ChemHelps" */;
 			buildPhases = (
 				A10000000000000000000007 /* Sources */,
 				A10000000000000000000003 /* Frameworks */,
@@ -76,16 +76,16 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A10000000000000000000002 /* Formelschreiber */,
+				A10000000000000000000002 /* ChemHelps */,
 			);
-			name = Formelschreiber;
-			productName = Formelschreiber;
-			productReference = A10000000000000000000001 /* Formelschreiber.app */;
+			name = ChemHelps;
+			productName = ChemHelps;
+			productReference = A10000000000000000000001 /* ChemHelps.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B10000000000000000000006 /* FormelschreiberTests */ = {
+		B10000000000000000000006 /* ChemHelpsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B10000000000000000000009 /* Build configuration list for PBXNativeTarget "FormelschreiberTests" */;
+			buildConfigurationList = B10000000000000000000009 /* Build configuration list for PBXNativeTarget "ChemHelpsTests" */;
 			buildPhases = (
 				B10000000000000000000007 /* Sources */,
 				B10000000000000000000003 /* Frameworks */,
@@ -97,11 +97,11 @@
 				B100000000000000000000BB /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				B10000000000000000000002 /* FormelschreiberTests */,
+				B10000000000000000000002 /* ChemHelpsTests */,
 			);
-			name = FormelschreiberTests;
-			productName = FormelschreiberTests;
-			productReference = B10000000000000000000001 /* FormelschreiberTests.xctest */;
+			name = ChemHelpsTests;
+			productName = ChemHelpsTests;
+			productReference = B10000000000000000000001 /* ChemHelpsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = A1000000000000000000000F /* Build configuration list for PBXProject "Formelschreiber" */;
+			buildConfigurationList = A1000000000000000000000F /* Build configuration list for PBXProject "ChemHelps" */;
 			developmentRegion = de;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -127,8 +127,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A10000000000000000000006 /* Formelschreiber */,
-				B10000000000000000000006 /* FormelschreiberTests */,
+				A10000000000000000000006 /* ChemHelps */,
+				B10000000000000000000006 /* ChemHelpsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -173,14 +173,14 @@
 			containerPortal = A10000000000000000000009 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A10000000000000000000006;
-			remoteInfo = Formelschreiber;
+			remoteInfo = ChemHelps;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXTargetDependency section */
 		B100000000000000000000BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A10000000000000000000006 /* Formelschreiber */;
+			target = A10000000000000000000006 /* ChemHelps */;
 			targetProxy = B100000000000000000000CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -233,12 +233,12 @@
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Formelschreiber;
+				INFOPLIST_KEY_CFBundleDisplayName = ChemHelps;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.makro.Formelschreiber;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makro.ChemHelps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -256,12 +256,12 @@
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Formelschreiber;
+				INFOPLIST_KEY_CFBundleDisplayName = ChemHelps;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = de.makro.Formelschreiber;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makro.ChemHelps;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -275,10 +275,10 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = de.makro.FormelschreiberTests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makro.ChemHelpsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Formelschreiber.app/Contents/MacOS/Formelschreiber";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChemHelps.app/Contents/MacOS/ChemHelps";
 			};
 			name = Debug;
 		};
@@ -289,17 +289,17 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = de.makro.FormelschreiberTests;
+				PRODUCT_BUNDLE_IDENTIFIER = de.makro.ChemHelpsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Formelschreiber.app/Contents/MacOS/Formelschreiber";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChemHelps.app/Contents/MacOS/ChemHelps";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A1000000000000000000000F /* Build configuration list for PBXProject "Formelschreiber" */ = {
+		A1000000000000000000000F /* Build configuration list for PBXProject "ChemHelps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10000000000000000000011 /* Debug (Project) */,
@@ -308,7 +308,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A10000000000000000000010 /* Build configuration list for PBXNativeTarget "Formelschreiber" */ = {
+		A10000000000000000000010 /* Build configuration list for PBXNativeTarget "ChemHelps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A10000000000000000000013 /* Debug (Target) */,
@@ -317,7 +317,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B10000000000000000000009 /* Build configuration list for PBXNativeTarget "FormelschreiberTests" */ = {
+		B10000000000000000000009 /* Build configuration list for PBXNativeTarget "ChemHelpsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B1000000000000000000000A /* Debug (Tests) */,

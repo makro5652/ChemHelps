@@ -19,7 +19,10 @@ final class WriterState: ObservableObject {
     var output: String { FormulaConverter.convert(input) }
 
     private init() {
-        history = UserDefaults.standard.stringArray(forKey: Self.historyKey) ?? []
+        // Verlauf aus der Zeit, als die App noch „Formelschreiber“ hieß, übernehmen.
+        history = UserDefaults.standard.stringArray(forKey: Self.historyKey)
+            ?? UserDefaults(suiteName: "de.makro.Formelschreiber")?.stringArray(forKey: Self.historyKey)
+            ?? []
     }
 
     func remember(_ text: String) {

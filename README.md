@@ -1,13 +1,25 @@
-# Formelschreiber
+# ChemHelps
 
-Menüleisten-App für macOS, die Chemie-Schreibweise in sauberen Unicode-Text umwandelt –
+Menüleisten-App für den Chemie- und Biologieunterricht mit drei Werkzeugen:
+
+- **Formelschreiber** (⌃⌥⌘F): Chemie-Schreibweise in sauberen Unicode-Text umwandeln.
+- **Periodensystem** (⌃⌥⌘E): großes schwebendes PSE für den Beamer. Beim Überfahren zeigt es Atommasse,
+  Elektronegativität, Elektronenkonfiguration, Schalenbesetzung und Stellung; Klick hält ein Element fest.
+  Färbung nach Elementgruppen, Elektronegativität oder Aggregatzustand.
+- **3D-Molekül** (⌃⌥⌘M): Namen eingeben (deutsch oder englisch, z. B. Koffein, Essigsäure, Glucose),
+  das Modell schwebt drehbar über dem Bildschirm. Kugel-Stab-, Kalotten- und Stäbchenmodell.
+  Strukturen kommen von PubChem und werden zwischengespeichert, bekannte Moleküle gehen danach auch offline.
+
+## Formelschreiber
+
+Wandelt Chemie-Schreibweise in Unicode-Text um –
 z. B. `2 H2 + O2 -> 2 H2O` → `2 H₂ + O₂ → 2 H₂O`. Funktioniert in jeder App (Word, Pages, Mail, Keynote, Browser …).
 
 ## Benutzung
 
 - **⌃⌥⌘F** oder Klick auf das Kolben-Symbol: Formelfenster öffnen, tippen, **↩** fügt das Ergebnis in die vorherige App ein.
 - **⌃⌥⌘K**: markierten Text in der aktuellen App direkt umwandeln.
-- Rechtsklick auf das Symbol: Menü mit „Beenden“.
+- Rechtsklick auf das Symbol: Menü mit allen Werkzeugen und „Beenden“.
 
 Direktes Einfügen und ⌃⌥⌘K brauchen die Freigabe unter *Systemeinstellungen › Datenschutz & Sicherheit › Bedienungshilfen*. Ohne sie wird das Ergebnis in die Zwischenablage kopiert.
 

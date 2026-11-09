@@ -3,14 +3,14 @@
 # Aufruf: ./install.sh
 set -e
 cd "${0:A:h}"
-ZIEL="/Applications/Formelschreiber.app"
+ZIEL="/Applications/ChemHelps.app"
 
 echo "Baue Release-Version …"
-xcodebuild -project Formelschreiber.xcodeproj -scheme Formelschreiber -configuration Release -derivedDataPath build build -quiet 2>/dev/null
-QUELLE="build/Build/Products/Release/Formelschreiber.app"
-[[ -x "$QUELLE/Contents/MacOS/Formelschreiber" ]] || { echo "Build fehlgeschlagen."; exit 1; }
+xcodebuild -project ChemHelps.xcodeproj -scheme ChemHelps -configuration Release -derivedDataPath build build -quiet 2>/dev/null
+QUELLE="build/Build/Products/Release/ChemHelps.app"
+[[ -x "$QUELLE/Contents/MacOS/ChemHelps" ]] || { echo "Build fehlgeschlagen."; exit 1; }
 
-pkill -x Formelschreiber 2>/dev/null || true
+pkill -x ChemHelps 2>/dev/null || true
 rm -rf "$ZIEL"
 ditto "$QUELLE" "$ZIEL"
 # Mit dem Entwicklerzertifikat signieren: Dann bleibt die Freigabe „Bedienungshilfen“

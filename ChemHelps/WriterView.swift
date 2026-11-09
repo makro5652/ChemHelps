@@ -6,6 +6,8 @@ struct WriterView: View {
     /// Einfügen in die App im Vordergrund (schließt das Fenster).
     let onInsert: (String) -> Void
     let onCopy: (String) -> Void
+    let onOpenTable: () -> Void
+    let onOpenMolecule: () -> Void
 
     @FocusState private var inputFocused: Bool
     @State private var showsHelp = false
@@ -106,9 +108,19 @@ struct WriterView: View {
         HStack(spacing: 8) {
             Image(systemName: "flask.fill")
                 .foregroundStyle(Self.accent)
-            Text("Formelschreiber")
+            Text("ChemHelps")
                 .font(.headline)
             Spacer()
+            Button(action: onOpenTable) {
+                Image(systemName: "tablecells")
+            }
+            .buttonStyle(.borderless)
+            .help("Periodensystem (\(HotkeyAction.periodicTable.displayString))")
+            Button(action: onOpenMolecule) {
+                Image(systemName: "atom")
+            }
+            .buttonStyle(.borderless)
+            .help("3D-Molekül (\(HotkeyAction.molecule.displayString))")
             Menu {
                 Toggle("Beim Anmelden starten", isOn: Binding(
                     get: { launchesAtLogin },
@@ -215,6 +227,8 @@ struct WriterView: View {
             }
             helpRow(HotkeyAction.openWriter.displayString, "dieses Fenster öffnen")
             helpRow(HotkeyAction.convertSelection.displayString, "markierten Text umwandeln")
+            helpRow(HotkeyAction.periodicTable.displayString, "Periodensystem")
+            helpRow(HotkeyAction.molecule.displayString, "3D-Molekül")
         }
         .font(.system(size: 12))
         .padding(.top, 6)
@@ -240,7 +254,7 @@ struct WriterView: View {
             }
             .keyboardShortcut("q")
             .controlSize(.small)
-            .help("Formelschreiber beenden (⌘Q)")
+            .help("ChemHelps beenden (⌘Q)")
         }
     }
 
@@ -268,16 +282,4 @@ struct WriterView: View {
         }
         launchesAtLogin = SMAppService.mainApp.status == .enabled
     }
-}
-
-private struct VisualEffect: NSViewRepresentable {
-    func makeNSView(context: Context) -> NSVisualEffectView {
-        let view = NSVisualEffectView()
-        view.material = .hudWindow
-        view.blendingMode = .behindWindow
-        view.state = .active
-        return view
-    }
-
-    func updateNSView(_ nsView: NSVisualEffectView, context: Context) {}
 }
